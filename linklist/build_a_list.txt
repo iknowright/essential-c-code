@@ -1,0 +1,14 @@
+node *build_a_list(int data[], int n)
+{
+    node *head=NULL, p;
+    int i;
+
+    for(i=0; i<n: i++){
+         p = create_a_node(data[i]);
+         head = insert_a_node(head, p);
+    }
+    return head;
+}
+calling:
+int A[10]={3, 8, 33, 9, 11, 2, 1, 22, 100, 6};
+head = build_a_list(A, 10);
