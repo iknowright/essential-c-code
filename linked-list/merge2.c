@@ -1,3 +1,12 @@
+#include <stddef.h>
+
+typedef struct node
+{
+    int data;
+    struct node *next, *prev;
+} node;
+
+
 node * merge2(node *h1, node *h2)
 {
     node *t;
@@ -11,5 +20,5 @@ node * merge2(node *h1, node *h2)
 
     return h2;
 }
-calling:
-head = merge2(h1, h2);
+// calling:
+// head = merge2(h1, h2);
